@@ -9,7 +9,8 @@
     loadModel()
 
     async function loadModel() {
-        model = await tf.loadGraphModel('https://storage.googleapis.com/export_bucket_mrderive/model.json')
+        //model = await tf.loadGraphModel('https://storage.googleapis.com/export_bucket_mrderive/model.json')
+        model = await tf.loadGraphModel('https://raw.githubusercontent.com/mrderive/mrderive.github.io/main/model.json')
         document.getElementById('image-upload').hidden = false
         document.getElementById('predict-button').hidden = false
         document.getElementById('canvas').hidden = false
